@@ -1,0 +1,343 @@
+/********** MEDIA QUERIES **********/
+
+/***************************************/
+/* BELOW 1344PX (smaller desktops) */
+/***************************************/
+
+@media (max-width: 84em) {
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+}
+
+/***************************************/
+/* BELOW 1200PX (Landscape tablets) */
+/***************************************/
+
+@media (max-width: 75em) {
+  html {
+    /*9px / 16px*/
+    font-size: 56.25%;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+
+  .main-nav {
+    column-gap: 4.8rem;
+    justify-content: space-between;
+  }
+
+  .hero-section {
+    column-gap: 5.2rem;
+    padding: 6.4rem 6.4rem 9.6rem 6.4rem;
+  }
+
+  .marketing-section {
+    grid-template-columns: repeat(1, 1fr);
+    height: 100%;
+    padding: 9.6rem;
+  }
+
+  .marketing-img {
+    height: 24rem;
+  }
+
+  .marketing-text {
+    margin-bottom: 6.4rem;
+  }
+
+  .company-img {
+    margin: 0 auto;
+    padding-bottom: 3.2rem;
+    width: 90%;
+  }
+
+  .company-section {
+    grid-template-columns: repeat(1, 1fr);
+    height: 100%;
+  }
+
+  .heading-tertiary br {
+    display: none;
+  }
+
+  .new-account-section {
+    padding: 9.6rem 8rem;
+  }
+
+  .tech-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1.8rem 0 3.2rem 0;
+  }
+
+  .referral-img {
+    margin: 0 auto;
+    padding-bottom: 4.8rem;
+  }
+
+  .referral-section {
+    height: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 9.6rem 8rem;
+  }
+
+  .testimonial-section {
+    height: 100%;
+    padding: 9.6rem 8rem;
+  }
+
+  .testimonial-ratings {
+    width: 50%;
+  }
+
+  .testimonials-container {
+    display: block;
+    height: 100%;
+  }
+
+  .testimonial {
+    margin-bottom: 3.2rem;
+  }
+}
+
+/***************************************/
+/* BELOW 944PX (Tablets) */
+/***************************************/
+@media (max-width: 59em) {
+  html {
+    /* 8x / 16px = 0.5 */
+    font-size: 50%;
+  }  
+
+  body.fixed {
+    position: fixed;
+  }
+
+  .main-nav-list {
+    display: none;
+    flex-direction: column;
+  }
+
+  .btn-mobile-nav {
+    display: flex;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 3rem;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    justify-content: center;   
+    padding: 2.4rem;
+  }
+
+  .main-nav.active {
+    background-image: linear-gradient(
+        rgba(34, 34, 34, 0.25),
+        rgba(34, 34, 34, 0.25)
+      ),
+      url("../img/header-bg.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .main-nav-list.active {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  } 
+
+  .hero-section {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 6.4rem 2.4rem 9.6rem 2.4rem;
+    text-align: center;
+  }
+  
+  .hero-nav {
+    justify-content: center;
+  }
+
+  .hero-text {
+    margin-bottom: 4.8rem;
+  }
+
+  .hero-img {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+
+  .hero-description {
+    font-size: 1.8rem;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .hero-description br {
+    display: none;
+  }  
+
+  .marketing-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }  
+
+  .tech-section {
+    padding: 9.6rem 2.4rem;
+  }
+
+  .new-account-section {
+    text-align: center;
+  }
+
+  .new-account-heading {
+    width: 100%;
+  }
+
+  .new-account-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .new-account-item {
+    text-align: left;    
+  }
+
+  .new-account-img {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .new-account-main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .referral-section,
+  .testimonial-section, .footer {
+    height: 100%;
+    padding: 9.6rem 2.4rem;
+  }
+
+  .referral-section {
+    text-align: center;
+  }
+}
+
+/***************************************/
+/* BELOW 768PX (Smaller Tablets) */
+/***************************************/
+@media (max-width: 48em) {
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .tech-section {
+    background: linear-gradient(
+      to bottom,
+      rgba(165, 203, 252, 0.5) 0%,
+      rgb(255, 255, 255) 100%
+    );
+  }
+
+  .marketing-section {
+    padding: 6.4rem;
+  }
+
+  .new-account-section {
+    padding: 9.6rem 2.4rem;
+  }
+
+  .testimonial-header {
+    display: block;
+  }
+
+  .testimonial-header-text {
+    margin-bottom: 3.2rem;
+    max-width: 100%;
+  }
+
+  .testimonial-ratings {
+    display: block;
+    width: 100%;
+  }
+
+  .rating {
+    justify-content: center;
+    margin-bottom: 1.6rem;
+  }
+
+  .footer-columns {
+    grid-template-columns: repeat(2, 1fr);    
+  }
+}
+
+/***************************************/
+/* BELOW 544px (Phones) */
+/***************************************/
+
+@media (max-width: 34em) {
+  .heading-primary {
+    font-size: 3.6rem;
+  }
+
+  .main-nav {    
+    padding: 2.4rem 4.8rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.8rem;
+  }
+
+  .marketing-section {
+    padding: 6.4rem 3.2rem;
+  }
+
+  .marketing-gallery, .tech-gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .marketing-img {
+    height: 28rem;
+  }
+  
+  .company-section {   
+    padding: 4.8rem 3.2rem;
+  }
+
+  .new-account-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .referral-section,
+  .testimonial-section,
+  .tech-section {   
+    padding: 4.8rem 2.4rem;
+  }
+  
+  .tech-heading .heading-tertiary {
+    margin-bottom: 2rem;
+  }
+
+}
